@@ -7,15 +7,25 @@
 </head>
 <body>
   <div id="container">
-    <h1>PeerJS Chatroom</h1>
-    <input id="room-id" placeholder="Enter Room ID" />
-    <button onclick="joinRoom()">Join Room</button>
+    <h1>🔗 Peer-to-Peer Chatroom</h1>
+
+    <div id="host-info">
+      <p>Your Room ID: <span id="my-id">Generating...</span></p>
+      <button onclick="copyRoomId()">📋 Copy Room ID</button>
+    </div>
+
+    <div id="join-section">
+      <input id="room-id" placeholder="Enter Host Room ID to Join" />
+      <button onclick="joinRoom()">Join Room</button>
+    </div>
+
     <div id="chat" class="hidden">
       <div id="messages"></div>
       <input id="message-input" placeholder="Type a message..." />
       <button onclick="sendMessage()">Send</button>
     </div>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/peerjs@1.5.2/dist/peerjs.min.js"></script>
   <script src="script.js"></script>
 </body>
