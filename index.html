@@ -1,32 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>PeerJS Chatroom</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="container">
-    <h1>🔗 Peer-to-Peer Chatroom</h1>
-
-    <div id="host-info">
-      <p>Your Room ID: <span id="my-id">Generating...</span></p>
-      <button onclick="copyRoomId()">📋 Copy Room ID</button>
-    </div>
-
-    <div id="join-section">
-      <input id="room-id" placeholder="Enter Host Room ID to Join" />
-      <button onclick="joinRoom()">Join Room</button>
-    </div>
-
-    <div id="chat" class="hidden">
-      <div id="messages"></div>
-      <input id="message-input" placeholder="Type a message..." />
-      <button onclick="sendMessage()">Send</button>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/peerjs@1.5.2/dist/peerjs.min.js"></script>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>p2p-chat</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
